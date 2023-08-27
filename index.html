@@ -10,23 +10,49 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <div class="result">
-                <h1 class="result__title">Your Result</h1>
-                <div class="result__score-box">
-                    <span id="score" class="result__score"></span>
+    <main class="container bg--very-light-blue">
+        <div class="result-summary bg--white rounded--l">
+            <div class="score rounded--l">
+                <h1 class="heading--m text--light-blue bold">Your Result</h1>
+                <div class="score__box flex flex--column flex--center bg--gradient-2">
+                    <span id="score" class="heading--xl text--white extra-bold">76</span>
+                    <span class="score--max text text--bold text--light-blue">of 100</span>
                 </div>
-                <span class="result__rating">Great</span>
-                <p class="result__text">Your performance exceed 65% of the people conducting the test here!</p>
+                <span class="heading--l text--white">Great</span>
+                <p class="text text--light-blue text--centered">Your performance exceed 65% of the people conducting
+                    the test here!</p>
             </div>
             <div class="summary">
                 <h2 class="summary__title">Summary</h2>
                 <ul class="summary__list">
-                    <li class="summary__item summary__item--red"></li>
-                    <li class="summary__item summary__item--yellow"></li>
-                    <li class="summary__item summary__item--green"></li>
-                    <li class="summary__item summary__item--purple"></li>
+                    <li class="summary__item bg--red-white-95">
+                        <div class="flex flex--align-center">
+                            <img src="assets/images/icon-reaction.svg" alt="reaction">
+                            <span class="text text--red">Reaction</span>
+                        </div>
+                        <div flex flex--align-center>
+                            <span class="text text--bold">80&nbsp;</span>
+                            <span class="text">/ 100</span>
+                        </div>
+                    </li>
+                    <li class="summary__item bg--yellow-white-95">
+                        <img src="assets/images/icon-memory.svg" alt="memory">
+                        <span class="text text--yellow">Memory</span>
+                        <span class="text text--bold">80&nbsp;</span>
+                        <span class="text">/ 100</span>
+                    </li>
+                    <li class="summary__item bg--green-white-95">
+                        <img src="assets/images/icon-verbal.svg" alt="verbal">
+                        <span class="text text--green">Verbal</span>
+                        <span class="text text--bold">80&nbsp;</span>
+                        <span>/ 100</span>
+                    </li>
+                    <li class="summary__item bg--blue-white-95">
+                        <img src="assets/images/icon-visual.svg" alt="visual">
+                        <span class="text text--blue">Visual</span>
+                        <span class="text text--bold">80&nbsp;</span>
+                        <span>/ 100</span>
+                    </li>
                 </ul>
                 <button class="button">Continue</button>
             </div>

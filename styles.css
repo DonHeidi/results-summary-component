@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient-1: linear-gradient(to bottom, #7755FF, #2F2CE9);
+    --gradient-2: linear-gradient(to bottom, #4D21C9, rgba(37, 33, 201, 0));
+    --red: hsl(0, 100%, 67%);
+    --red-white-95: hsla(0, 100%, 67%, 0.05);
+    --yellow: hsl(39, 100%, 56%);
+    --yellow-white-95: hsla(39, 100%, 56%, 0.05);
+    --green: hsl(166, 100%, 37%);
+    --green-white-95: hsla(166, 100%, 37%, 0.05);
+    --blue: hsl(234, 85%, 45%);
+    --blue-white-95: hsla(234, 85%, 45%, 0.05);
+    --light-blue: #CAC9FF;
+    --very-light-blue: #ECF2FF;
+    --dark--navy: #303B59;
+}
+
+.container {
+    font-family: 'Hanken Grotesk';
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+
+    .result-summary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        background: white;
+        max-width: 736px;
+
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        .score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            background: linear-gradient(to bottom, #7755FF, #2F2CE9);
+            padding-top: 38px;
+            padding-bottom: 46px;
+            padding-inline: 54px;
+
+
+            .score__title {
+                font-size: 1.5rem;
+                line-height: auto;
+                color: #CAC9FF;
+            }
+
+            .score__box {
+
+                width: 200px;
+                aspect-ratio: 1 / 1;
+                gap: 4px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                .score--max {
+                    opacity: 0.5166;
+                }
+            }
+        }
+
+        .summary {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 38px;
+            padding-bottom: 46px;
+            padding-inline: 2.4rem;
+
+            .summary__list {
+                margin-top: 28px;
+                margin-bottom: 41px;
+            }
+
+
+            .summary__item {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                padding: 1rem;
+                border-radius: 0.75rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.flex--align-center {
+    align-items: center;
+}
+
+.flex--justify-center {
+    justify-content: center;
+}
+
+.flex--center {
+    align-items: center;
+    justify-content: center;
+}
+
+.heading--xl {
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.heading--l {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.heading--m {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.text--white {
+    color: white;
+}
+
+.text--red {
+    color: var(--red);
+}
+
+.text--yellow {
+    color: var(--yellow);
+}
+
+.text--green {
+    color: var(--green);
+}
+
+.text--blue {
+    color: var(--blue);
+}
+
+.text--light-blue {
+    color: var(--light-blue);
+}
+
+.text--very-light-blue {
+    color: var(--very-light-blue);
+}
+
+.text--dark--navy {
+    color: var(--dark--navy);
+}
+
+.text--centered {
+    text-align: center;
+}
+
+.text--bold {
+    font-weight: 700;
+}
+
+.text--extra-bold {
+    font-weight: 800;
+}
+
+.bg--gradient-1 {
+    background: var(--gradient-1);
+}
+
+.bg--gradient-2 {
+    background: var(--gradient-2);
+}
+
+.bg--white {
+    background: white;
+}
+
+.bg--very-light-blue {
+    background: var(--very-light-blue);
+}
+
+.bg--red-white-95 {
+    background: var(--red-white-95);
+}
+
+.bg--yellow-white-95 {
+    background: var(--yellow-white-95);
+}
+
+.bg--green-white-95 {
+    background: var(--green-white-95);
+}
+
+.bg--blue-white-95 {
+    background: var(--blue-white-95);
+}
+
+.rounded--l {
+    border-radius: 2rem;
+}
