@@ -1,0 +1,11 @@
+{
+  "name": "results-summary-component",
+  "version": "1.0.0",
+  "description": "A Frontend Mentor Challenge for a results summary component",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Sebastian Heitmann <me@sebastian-heimtann.dev>",
+  "license": "ISC"
+}
