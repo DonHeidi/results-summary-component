@@ -93,9 +93,14 @@
             margin-bottom: 41px;
         }
 
+        .summary__icon {
+            margin-right: 12px;
+        }
+
 
         .summary__item {
             list-style: none;
+            justify-content: space-between;
             padding: 1rem;
             border-radius: 0.75rem;
 
