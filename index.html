@@ -11,26 +11,26 @@
 
 <body>
     <main class="container bg--very-light-blue">
-        <div class="result-summary bg--white rounded--l">
-            <div class="score rounded--l">
+        <div class="result-summary grid grid__col--2 grid--center bg--white rounded--l">
+            <div class="score flex flex--column flex--align-center bg--gradient-1 rounded--l">
                 <h1 class="heading--m text--light-blue bold">Your Result</h1>
                 <div class="score__box flex flex--column flex--center bg--gradient-2">
-                    <span id="score" class="heading--xl text--white extra-bold">76</span>
+                    <span id="score" class="heading--xl text--white text--extra-bold">76</span>
                     <span class="score--max text text--bold text--light-blue">of 100</span>
                 </div>
-                <span class="heading--l text--white">Great</span>
+                <span class="heading--l text--white text--bold">Great</span>
                 <p class="text text--light-blue text--centered">Your performance exceed 65% of the people conducting
                     the test here!</p>
             </div>
-            <div class="summary">
-                <h2 class="summary__title">Summary</h2>
+            <div class="summary flex flex--column">
+                <h2 class="heading--m">Summary</h2>
                 <ul class="summary__list">
-                    <li class="summary__item bg--red-white-95">
+                    <li class="summary__item flex flex--align-center bg--red-white-95">
                         <div class="flex flex--align-center">
                             <img src="assets/images/icon-reaction.svg" alt="reaction">
                             <span class="text text--red">Reaction</span>
                         </div>
-                        <div flex flex--align-center>
+                        <div flex flex--align-center style="align-self: flex-end;">
                             <span class="text text--bold">80&nbsp;</span>
                             <span class="text">/ 100</span>
                         </div>
@@ -54,7 +54,7 @@
                         <span>/ 100</span>
                     </li>
                 </ul>
-                <button class="button">Continue</button>
+                <button class="button text text--bold text--white">Continue</button>
             </div>
         </div>
     </main>
