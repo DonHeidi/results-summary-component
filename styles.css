@@ -58,6 +58,12 @@
 .result-summary {
     max-width: 736px;
 
+    &.rounded--l {
+        @media screen and (max-width: 768px) {
+            border-radius: 0;
+        }
+    }
+
     .score {
         padding-bottom: 46px;
         padding-inline: 54px;
@@ -89,8 +95,17 @@
         width: 100%;
         height: 100%;
 
+        @media screen and (max-width: 768px) {
+            padding-inline: 30px;
+            padding-bottom: 30px;
+        }
+
         .summary__list {
             margin-bottom: 41px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 24px;
+            }
         }
 
         .summary__icon {
